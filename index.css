@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  .container {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-height: 150vh;
+  }
+
+  footer {
+    text-align: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+  }
+
+  main > p {
+    font-size: 1.5em;
+  }
+
+  div.controls {
+    font-weight: bold;
+  }
+  
+  h1, h2 {
+    margin: 0;
+    color: #333;
+  }
+
+  img {
+    width: 100%
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Navigation */
+  nav {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    transition: background-color 0.3s; /* Added transition */
+  }
+  
+  .menu-toggle-checkbox {
+    display: none;
+  }
+  
+  .menu-toggle-label {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #000;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .menu-toggle-icon {
+    display: inline-block;
+    vertical-align: middle;
+    color: #000;
+  }
+  
+  .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .menu li {
+    margin-left: 10px;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+  }
+  
+  .menu li a:hover {
+    background-color: #555;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (min-width: 768px) {
+    .menu-toggle-checkbox {
+      display: none;
+    }
+  
+    .menu-toggle-label {
+      display: none;
+    }
+  
+    .menu {
+      display: flex !important;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .menu-toggle-label {
+      display: block;
+    }
+  
+    .menu {
+      display: none;
+      position: absolute;
+      top: 135%;
+      right: 0;
+      background-color: #333;
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s;
+    }
+  
+    .menu-toggle-checkbox:checked + .menu-toggle-label + .menu {
+      display: block;
+      opacity: 1;
+      pointer-events: auto;
+      box-sizing: border-box;
+    }
+  
+    .menu-toggle-icon {
+      display: inline-block;
+      vertical-align: middle;
+      color: #000;
+      margin-top: -1em;
+    }
+  
+    .menu li {
+      margin: 10px 0;
+    }
+  
+    nav {
+      background-color: transparent;
+    }
+  }
+  

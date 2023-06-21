@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="container">
+    <h1>Concentration Game</h1>
+    <nav>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+      <label for="menu-toggle" class="menu-toggle-label">
+        <span class="menu-toggle-icon">&#9776;</span>
+      </label>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="game.html">Play Game</a></li>
+        <li><a href="instructions.html">Instructions</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav style=>
+    <div class="board"></div>
+    <div class="controls">
+      <div class="moves">Moves: <span id="moves">0</span></div>
+      <div class="timer">Timer: <span id="timer">0</span> s</div>
+      <div class="score">Score: <span id="score">0</span></div>
+    </div>
+    <button class="reset-btn">Start New Game</button>
+  </div>
+  <footer>
+    <p>V.1.0 &copy; 2023 Concentration Game. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
