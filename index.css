@@ -44,13 +44,12 @@ body {
     margin-bottom: 20px;
   }
   
-  /* Navigation */
   nav {
     background-color: #333;
     padding: 10px;
     border-radius: 5px;
     position: relative;
-    transition: background-color 0.3s; /* Added transition */
+    transition: background-color 0.3s;
   }
   
   .menu-toggle-checkbox {
@@ -96,7 +95,6 @@ body {
     background-color: #555;
   }
   
-  /* Responsive Styles */
   @media screen and (min-width: 768px) {
     .menu-toggle-checkbox {
       display: none;
